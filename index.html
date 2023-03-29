@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/f7c817e92b.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- MAIN NAVBAR -->
+    <nav class="navbar bg-body-tertiary display-flex navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand display-flex"><i class="fa-brands fa-instagram fa-xl"></i> Instagram</a>
+            <div>
+                <button type="button" class="btn btn-lg btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+                <!--MODAL-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Caption:</label>
+                            <textarea class="form-control border-secondary-subtle border-2 form-control" id="caption-text" placeholder="Add the caption of your post here"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <button type="button" class="border-secondary-subtle border-2 btn btn-light">
+                              <i class="fa-solid fa-camera"></i>
+                            </button>
+                            <button type="button" class="border-secondary-subtle border-2 btn btn-light">
+                              <i class="fa-solid fa-location-dot"></i>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- DROPDOWN -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-lg btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="text-danger dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- OPCIONES DE VISUALIZACIÓN -->
+    <nav>
+        <div class="d-flex justify-content-center nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-cell-tab" data-bs-toggle="tab" data-bs-target="#nav-cell" type="button" role="tab" aria-controls="nav-cell" aria-selected="false"><i class="fa-solid fa-table-cells fa-xl"></i></button>
+          <button class="nav-link" id="nav-list-tab" data-bs-toggle="tab" data-bs-target="#nav-list" type="button" role="tab" aria-controls="nav-list" aria-selected="false"><i class="fa-solid fa-square fa-xl"></i></button>
+        </div>
+    </nav>
+     <div class="tab-content" id="nav-tabContent">
+     <!-- TABLE-CELL -->
+      <div class="tab-pane fade show active" id="nav-cell" role="tabpanel" aria-labelledby="nav-cell-tab" tabindex="0">
+      <!-- <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div> -->
+        <div class="container-fluid p-2 b-0 m-2">
+          <div class="row">
+            <div class="col-4 p-1">
+                <img src="./imgs/istockphoto-953184730-170667a.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-4 p-1">
+                <img src="./imgs/9096515710_0d7789617e_b.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-4 p-1">
+                <img src="./imgs/HD-wallpaper-cabin-at-raura-lake-norway-cabin-lake-norway.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-1">
+              <div>
+                <img src="./imgs/HD-wallpaper-fjord-in-norway-fjord-house-mountains-norway-boats.jpg" class="img-fluid" alt="">
+              </div>
+              </div>
+            <div class="col-4 p-1">
+              <div>
+                <img src="./imgs/HD-wallpaper-geirangerfjord-mountain-landscape-waterfall-fjord-sunnmore-norway.jpg" class="img-fluid" alt="">
+              </div>
+              </div>
+            <div class="col-4 p-1">
+              <div>
+                <img src="./imgs/HD-wallpaper-lonely-cabin-on-a-field.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-1">
+              <div>
+                <img src="./imgs/HD-wallpaper-monument-stavanger-norway-swords-gothic-monuments-dark-midage-stavanger-norway.jpg" class="img-fluid" alt="">
+              </div>
+              </div>
+            <div class="col-4 p-1">
+              <div>
+                <img src="./imgs/HD-wallpaper-norway-fjord-mountains-kayak-lake-europe.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-4 p-1">
+              <div>
+                <img src="./imgs/HD-wallpaper-queen-mary-2-cruise-ship-fjord-mountains-norway.jpg" class="img-fluid" alt="">
+              </div>
+              </div>
+          </div>
+        <div>
+      </div>
+    </div>
+    </div>
+     <!-- LIST -->
+      <div class="tab-pane fade" id="nav-list" role="tabpanel" aria-labelledby="nav-list-tab" tabindex="0">
+        <!-- POST -->
+        <div class="container col-6 border p-0 mt-3 justify-content-center mx-auto">
+          <div class="postHeader row p-3">
+            <div class="d-flex justify-content-between">
+              <h2>Cabaña en Molde</h2>
+              <h5>06/22</h5>
+            </div>
+          </div>
+          <img class="w-100" src="https://w0.peakpx.com/wallpaper/711/721/HD-wallpaper-cabin-at-raura-lake-norway-cabin-lake-norway.jpg">
+          <div class="p-3 pb-4">
+            <h4>Likes 203</h4>
+            <h5>En ella pasamos los fines de semana más divertidos que se pueda disfrutar en las épocas más soleadas de... <strong>#Noruega</strong>.</h5>
+          </div>
+        </div>
+        <div class="container col-6 border p-0 mt-4 justify-content-center mx-auto">
+          <div class="postHeader row p-3">
+            <div class="d-flex justify-content-between">
+              <h2>Preikestolen</h2>
+              <h5>06/22</h5>
+            </div>
+          </div>
+          <img class="w-100" src="https://c3.staticflickr.com/3/2834/9096515710_0d7789617e_b.jpg">
+          <div class="p-3 pb-4">
+            <h4>Likes 134</h4>
+            <h5>El púlpito de los dioses!! Increíble capricho natura, sin vallas, para observar <strong>#Noruega</strong> desde lo más alto.</h5>
+          </div>
+        </div>
+        <div class="container col-6 border p-0 mt-4 justify-content-center mx-auto">
+          <div class="postHeader row p-3">
+            <div class="d-flex justify-content-between">
+              <h2>Ålesund</h2>
+              <h5>06/22</h5>
+            </div>
+          </div>
+          <img class="w-100" src="https://media.istockphoto.com/photos/city-of-alesund-norway-picture-id953184730?k=6&m=953184730&s=170667a&w=0&h=HsN58J199EwYNxWB3j1rCMC7K9UD0tW2bq6BBx25KAA=">
+          <div class="p-3 pb-4">
+            <h4>Likes 107</h4>
+            <h5>Seguramente el pueblo más bello de <strong>#Noruega</strong>. De visita obligada para dejarse deslumbrar por el encanto de sus calles y barrios pesqueros.</h5>
+          </div>
+        </div>
+        <div class="container col-6 border p-0 mt-4 justify-content-center mx-auto">
+          <div class="postHeader row p-3">
+            <div class="d-flex justify-content-between">
+              <h2>Fjord</h2>
+              <h5>06/22</h5>
+            </div>
+          </div>
+          <img class="w-100" src="https://w0.peakpx.com/wallpaper/434/764/HD-wallpaper-norway-fjord-mountains-kayak-lake-europe.jpg">
+          <div class="p-3 pb-4">
+            <h4>Likes 126</h4>
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui veniam hic consectetur dicta? Tenetur error, libero provident minima adipisci maxime cumque aspernatur vero qui amet hic corporis reiciendis est repudiandae?</h5>
+          </div>
+        </div>
+        <div class="container col-6 border p-0 mt-4 justify-content-center mx-auto">
+          <div class="postHeader row p-3">
+            <div class="d-flex justify-content-between">
+              <h2>Y más fjordos</h2>
+              <h5>06/22</h5>
+            </div>
+          </div>
+          <img class="w-100" src="https://w0.peakpx.com/wallpaper/172/990/HD-wallpaper-fjord-in-norway-fjord-house-mountains-norway-boats.jpg">
+          <div class="p-3 pb-4">
+            <h4>Likes 98</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi autem quae commodi neque libero, blanditiis esse, ea est suscipit molestias qui iusto deleniti aliquam ad natus quibusdam nulla sit harum?</h5>
+          </div>
+        </div>
+        <div class="container col-6 border p-0 mt-4 justify-content-center mx-auto">
+          <div class="postHeader row p-3">
+            <div class="d-flex justify-content-between">
+              <h2>Stavanger</h2>
+              <h5>06/22</h5>
+            </div>
+          </div>
+          <img class="w-100" src="https://w0.peakpx.com/wallpaper/688/733/HD-wallpaper-monument-stavanger-norway-swords-gothic-monuments-dark-midage-stavanger-norway.jpg">
+          <div class="p-3 pb-4">
+            <h4>Likes 163</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt possimus inventore rerum, reiciendis blanditiis fugiat, quam temporibus dolorum reprehenderit itaque ipsum assumenda enim quos eum, nisi tenetur. Ipsum, labore quasi.</h5>
+          </div>
+        </div>
+        <div class="container col-6 border p-0 mt-4 justify-content-center mx-auto">
+          <div class="postHeader row p-3">
+            <div class="d-flex justify-content-between">
+              <h2>Skarnes</h2>
+              <h5>06/22</h5>
+            </div>
+          </div>
+          <img class="w-100" src="https://w0.peakpx.com/wallpaper/923/776/HD-wallpaper-lonely-cabin-on-a-field.jpg">
+          <div class="p-3 pb-4">
+            <h4>Likes 102</h4>
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi architecto, tempora sequi doloremque expedita ipsum perferendis quae beatae, soluta labore id numquam ullam incidunt? Aspernatur, voluptas? Molestias esse voluptatibus est.</h5>
+          </div>
+        </div>
+        <div class="container col-6 border p-0 mt-4 justify-content-center mx-auto">
+          <div class="postHeader row p-3">
+            <div class="d-flex justify-content-between">
+              <h2>Queen Mary 2 en fjordo noruego</h2>
+              <h5>06/22</h5>
+            </div>
+          </div>
+          <img class="w-100" src="https://w0.peakpx.com/wallpaper/710/261/HD-wallpaper-queen-mary-2-cruise-ship-fjord-mountains-norway.jpg">
+          <div class="p-3 pb-4">
+            <h4>Likes 212</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim animi saepe sapiente aut vero aspernatur, nisi, ab vitae asperiores sed explicabo labore molestias a voluptatem itaque nobis. Repellendus, quidem necessitatibus.</h5>
+          </div>
+        </div>
+        <div class="container col-6 border p-0 mt-4 justify-content-center mx-auto">
+          <div class="postHeader row p-3">
+            <div class="d-flex justify-content-between">
+              <h2>Geirangerfjord</h2>
+              <h5>06/22</h5>
+            </div>
+          </div>
+          <img class="w-100" src="https://w0.peakpx.com/wallpaper/66/374/HD-wallpaper-geirangerfjord-mountain-landscape-waterfall-fjord-sunnmore-norway.jpg">
+          <div class="p-3 pb-4">
+            <h4>Likes 77</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dicta maiores similique ipsum ducimus cumque consequuntur illo unde deleniti vitae inventore, ab nisi autem illum laudantium sunt atque, dolor incidunt!</h5>
+          </div>
+        </div>
+      </div>
+    <!-- MODAL -->
+    <div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
